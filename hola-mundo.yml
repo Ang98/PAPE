@@ -1,0 +1,13 @@
+name: Testing Hola mundo
+run-name: Encendiendo github actions
+on: [push]
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Definir Variable
+        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
+      - name: Correr Script
+        run: python test_hola_mundo.py
