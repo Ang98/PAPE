@@ -86,6 +86,8 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "pape.users",
     # Your stuff: custom apps go here
+    "pape.walkers",
+    "pape.walks",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
